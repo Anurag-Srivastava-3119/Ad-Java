@@ -1,0 +1,31 @@
+Hello world --  Application
+
+1.Open your mainActivity.kt (kt== kotlin)
+2.CODE--SECTION
+
+
+"  package com.HelloWorld
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+}"
+
+3."import androidx.appcompat.app.AppCompatActivity" ==== This package Make your app compartable to use on multiple devices.
+4. "setContentView(R.layout.activity_main)"==This is  the most important part ...we set the content and it is a view 
+..R(resource folder).layout(under layout folder).activity_main (folder).
+
+5.If you want to change the "text" then ..1 go to "declaration attributes"
+                                         2. go to "text" 
+                                        3.change the text and press ENTER (warning of Hard Coding).
+
+6. to change the "Text Size"...1.go to "common attributes"
+                               2.go to "text Appearence"
+                               3.go to "text size" == __sp (scale Independent pixels).
+
+7.ctrl + s --to save all changes.

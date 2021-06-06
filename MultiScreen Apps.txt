@@ -1,0 +1,87 @@
+** An Activity = Screen.
+
+One activity in an app is specified as the "main"
+activity which is shown to the user when the app 
+is launched.
+
+* Intent:
+Whenever a new activity starts previous activity is stopped 
+but the system preservers the activity in a stack.
+This way when a new activity starts that new activity
+is pushed onto the back stack and takes user focus.
+
+Its like LIFO Logic.(last in first out)
+
+* An activity is started with an Intent. An intent is 
+a message from one activity to another activity .
+We can pass information from one activity to another intents.
+
+* Types of Intents :
+An Intent can be of two types :
+
+1. Implicit Intent : Target component not known.
+                   : we have a general action to perform.
+
+2.Explicit Intent : Target of the intent is known
+                  : Fully classified classname of a specific
+                    activity known.
+
+
+* Our first Multiscreen App:
+we will now create an app which has an EditText
+on the first activity.User enters a message and clicks 
+a button to send this message to second activity.
+
+* We will now create this app using the following steps:
+
+1.Create a new app (using Empty layout)
+2.Design the layout for the first app
+3.create button click listeners.
+4.create the second activity.
+5.Add proper links and metadata in manifist.xml 
+6.Add an intent using the following code:
+
+Intent intent = new Intent (this, SecondActivity.class);
+startActivity(intent);.......This is an Explicit Intent
+
+* Sending data cross activities 
+we can send data cross activities using intent extras.
+Intent extras are key/values pairs in a Bundle .
+A Bundle is a collection of data stored as key/values pairs
+
+Syntax for intent put extra looks like this:
+intent.putExtra("Key","value");
+we can get this message from another activity using;
+Intent intent = getIntent();
+String message = intent.getStringExtra("key")
+
+* Implicit Intents:
+In implicit intent we initiate an activity without knowing 
+which app or activity will handle the task.
+Ex;Take a photo , open this URL etc..
+
+Activity with matching intent filters opt in to perform 
+the action.
+
+* Creating an app with Implicit Intent
+Folling code starts an activity to open a URL
+
+String url = " Some-URL"....Ex- https://anuragsrivastava.com
+Intent intent = new intent(Intent.ACTION_VIEW, webpage);
+
+if(intent.resolveActivity(getPackageManager())!=null)
+{
+  StartActivity(intent);
+}
+ else {
+//cannot handle intent
+}
+}
+
+
+Similarly we can handle intents with other actions.
+For eg: open a location, some text etc.
+
+
+
+

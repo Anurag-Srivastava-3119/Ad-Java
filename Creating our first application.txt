@@ -1,0 +1,69 @@
+* In this chapter we will create our first andriod app .
+I dont expect you to know anything but will walk you 
+though the steps to build your first Andriod App !
+
+* What is an APK ?
+
+An APK is a  collection of different files (like code, audio,
+video.etc) compiled and bundled into a single file.
+
+* What is an AVD ?
+
+AVD stands for Andriod Virtual Device 
+AVD is an emulator cofiguration that simulates a 
+physical Andriod device.
+
+*Andriod UI Layouts --
+
+view are the base class for widgets 
+like -- Buttons, textfile etc.
+
+view =Basic building blocks 
+viewGroups holds view and view Group.(think view Groups as a container)
+
+*XML vs java in Andriod 
+
+XML is the Skeleton code which describe the UI layout and java derives this XML (functionalities)
+
+* Important Notes :
+ 
+1. Andriod Studio is a resource hungry program . you need to have patience while using it.
+2. Sometimes andriod studio might download files from the internet so keep your wifi/Hotspot ready.
+3. In very rare case your firewall might block andriod studio In that case you will need to allow it.(explicitly)
+4. If your computer is slow use USB debugging to use your phone as an AVD replacement.
+5. If you are using an old pc then make sure that the Virtualization is ON (Under Task manager)
+
+* Creating our App :
+
+1. click on create a new project.
+2. click on Empty activity.
+3. click next.
+4. Type the name of the app and click finish.
+5. wait for gradle build to Finish.
+
+* The R.Java file
+ Andriod R.java file contains resource IDe for all the resources .
+We can use it to access view from our java files .
+
+button = findViewById (R.id.mybutton);
+
+* Adding Event Listeners
+  We can add click listeners by using SetOnClickListener method as follows:
+
+  button.setOnClickListener(new View.OnclickListener(){
+  @Override
+  public void onClick(view v){
+  //Action here you can add "Toast"
+  }
+  });
+
+* Andriod : onclick attribute
+  
+  the onclick attributes can be set for the button element
+  in XML Layout
+
+  andriod : onclick = "send Message"  --In XML
+  public void send message (view view){
+   //code Here
+   }.
+

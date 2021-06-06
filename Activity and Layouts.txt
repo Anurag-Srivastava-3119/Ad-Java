@@ -1,0 +1,86 @@
+* What is an Activity?
+A single focused thing that the user can do 
+In Laymans term ...Activity = Screen 
+
+Activity has Layouts -- It defines how Views  are displayed 
+
+* Types of Layouts in Andriod.
+If you go to the palette you will find a lot of layouts .
+We can use any of these. Ex Linear layout, Constraints Layout..etc
+
+* LINEAR LAYOUT :
+ Arrange its collections of views in a straight horizontal or vertical 
+ row.
+ Gravity attribute can be used for alignment.
+
+* Required attributes of a Linear Layout.
+1. layout width -- can be match parent/wrap content/ some value dp(dimentions pixels)
+2. layout height -- can be match parent/ wrap content /some value dp.
+3. orientation -- can be Horizontal or vertical.
+
+** Note- Never close ur Emulator on every run when you change the app 
+Emulator is a resource hungry program and will take time to launch.
+
+* Relative Layout-
+-Elements are aligned relative to each other.
+-Attribute like andriod:layout_alignParentTop are used to 
+declare position of views .
+
+The relative layout is available in legacy tab in palette
+
+Legacy tab in palette-
+some view layouts in andriod studio are replaced with better
+counterparts.
+
+ListView is replaced with Recycler View
+GridView is replaced with ConstraintLayout
+TabHost is replaced with Tablayout
+Relative is replaced with ConstraintLayout
+
+
+* Important Note..-
+- Component view show certain warnings sometimes
+correcting these by following good practice is recommended.
+-You can resize the preview as per the device of your liking in 
+design view itself.
+-Andriod Stdio uses Gradle as the build system.
+-Project structure of andriod is very simple and straight forword.
+- you dont have to remember all the attributes of every view.
+
+
+*String.xml file -
+This file contains string resources in xml format
+
+<string name = "app">Anurag </string>
+-Here "app" is Identifier ....and Anurag is the value.
+We can use <b> bold </b> and <i> Italic </i> tags inside 
+the text in string.xml .other HTML Tags are ignored
+Escape sequence characters like '\n' are also allowed.
+
+
+*Scroll View:
+Scrollview is a viewGroup used to create Scrollable views.
+It contains just one child which can be greater
+than the screen height and can be scrolled.
+
+Scroll view offers many attributes which is used to customize it.
+
+
+*Horizontal Scrollview:
+It is very similar to scrollview but instead of vertical 
+scrolling it provides functionality for horizontal scrolling
+
+*Logging in Andriod 
+we can log a message to the console using:
+Log.d("Tag","Log this message");
+similarly we can use Log.i for info, Log.e for error etc.
+
+*Constraints Layout;
+contraints layout allows us to position widgets by applying constraints 
+(You can Imagine a constraints as a Spring)
+
+We can add a baseline constraints  on widgets inside the constraints layout by right clicking>
+show Baseline and finally adding the baseline constraints.
+ 
+
+

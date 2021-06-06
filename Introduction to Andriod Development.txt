@@ -1,0 +1,31 @@
+* Introduction:
+
+Andriod is one of the most Popular Operating System,
+with over 88% of phones running Andriod.
+
+* Xml and Kotlin code:
+
+An xml file is used to build layout in Andriod. Layouts
+are static pages(Screens) which can be manipulated using 
+Kotlin/java code (Programmatically)
+Declaring UI's in XML enables us to better seperate the 
+presentation of our application from the code that controls 
+its behaviour
+
+* Installing Andriod Studio :
+
+Andriod studio is an IDE the makes it easy for us to write and 
+build andriod application very conveniently we can create emulators 
+(virtual andriod phones), see previews and build UI layouts using drag 
+and drop features
+you can go to https://developer.andriod.com
+
+* The Layout Editors :
+
+The layout editor is used to quickly bulid layouts by dragging UI  
+elements which is easier to write XML code by hand.
+we can setup different attributes easily using the design mode in layout 
+editor.
+
+
+
