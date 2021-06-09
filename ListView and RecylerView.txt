@@ -1,0 +1,59 @@
+* In Andriod a scrollable list of items is implemented using a List View.
+The data is populated into the list using an Adapter.
+Adapter converts an Array/Arraylist into view items.
+
+*Array Adapter:
+Array Adapter is used to display a set of items in a Listview
+ArrayAdapter<String>ad = new ArrayAdapter(this,R.layout list_item,SArr)
+
+listView.setAdapter(ad);
+
+This sets the content of SArr to list view
+
+*Custom Array Adapter:
+We can create custom array adapter by creating a model and 
+a class (eg. MyAdapter) which extends ArrayAdapter . we
+can pass our string array to MyAdapter like this:
+
+MyAdapter ad = new MyAdapter(this,SArr);
+listView.setAdapter(ad)
+
+*Why use ListViews:
+It will be very hectic to create a scrollable view where data is coming from a 
+Data Source.Just imagine how hectic would it be to otherwise populate data into
+a view to show it to the user.
+Hence Listview are used due to the following reasons:
+
+-User and developer Friendly
+-optimized to some extent
+-Easy to customize
+-Simple Lists can be created in few lines of code.
+
+*Adding onClick listener to items 
+we can override onItemClick method to add click listeners
+as shown below:
+
+listView.setOnItemClickListener(new OnItemClickListener() {
+....
+}
+
+*Built in XML Layouts
+Andriod provides you a list of built in layouts to be used within list views.
+Ex: andriod.R.layout.simple.list_item_1; 
+    andriod.R.layout.simple.list_item_2;
+    ...etc
+
+*RecyclerView:
+Its simply a better version of listviews
+
+In ListView - Memory is directly propotional to the number of items
+
+Recycler view solves this problem by recycling the existing views
+hence saving up on memory.
+We simply update the adapter in RecyclerView to an Adapter which is capable of Recycling the views
+
+*How to implement a Recyclerview
+A RecyclerView can be implemented just like listviews using an Adapter.
+All the major changes are done to the Adapter.
+Andriod Docs has a page which can be used as a 
+Starter template for implementing RecyclerViews.
